@@ -36,7 +36,8 @@ tax<-read.csv('taxonomy.csv', header=T,row.names = 1)
 otuSum<- colSums(otu)
 reOtu<-relativeAbundanceOtutable(otu)
 re_class<-generatorTab(reOtu,tax,"class")
-write.table(re_class, file = "re_class.csv",row.names=FALSE, na="",col.names=FALSE, sep=",")
+re_class_top10<-re_class[1:11,]
+write.table(re_class_top10, file = "re_class.csv",row.names=FALSE, na="",col.names=FALSE, sep=",")
 
 
 

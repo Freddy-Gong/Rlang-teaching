@@ -1,4 +1,4 @@
-"X.OTU.ID","phylum","class","order","family","genus","species"
+"X.OTU.ID","Kingdom","phylum","class","order","family","genus"
 "Otu1","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Muribaculaceae","Duncaniella"
 "Otu10","Bacteria","Firmicutes","Bacilli","Lactobacillales","Lactobacillaceae","Lactobacillus"
 "Otu100","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","other"
@@ -222,3 +222,4 @@
 "Otu97","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Porphyromonadaceae","Porphyromonas"
 "Otu98","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","other"
 "Otu99","Bacteria","Firmicutes","Clostridia","Clostridiales","other","other"
+"X.OTU.ID","phylum","class","order","family","genus","species"
