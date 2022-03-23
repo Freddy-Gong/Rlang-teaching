@@ -31,8 +31,9 @@ generatorTab<-function(otu,tax,taxLevel){
   }
   return(result)
 }
+
 otu<-read.csv('otutable.csv', header=T,row.names = 1) 
-tax<-read.csv('taxonomy.csv', header=T,row.names = 1) 
+tax<-read.csv('taxonomy.csv', header=T) 
 otuSum<- colSums(otu)
 reOtu<-relativeAbundanceOtutable(otu)
 re_class<-generatorTab(reOtu,tax,"class")

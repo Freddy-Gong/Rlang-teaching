@@ -1,5 +1,7 @@
+library(vegan)
 otu<-read.csv('re_class.csv', header=T,row.names = 1) 
 group<-read.csv('design.csv',header = T)
+
 dis_bray<-vegan::vegdist(t(otu),method = 'bray')
 tree<-hclust(dis_bray,method = 'average')
 plot(tree)
@@ -19,7 +21,7 @@ legend('topleft', legend = group_name, pch = 15, col = group_col, bty = 'n', cex
 phylum_color <- c('#8DD3C7', '#FFFFB3', '#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#FCCDE5', '#BC80BD', '#CCEBC5')
 names(phylum_color) <- rownames(otu)
 #?ѵ?????ͼ
-par(mar = c(5, 2, 5, 0))
+par(mar = c(5, 3, 5, 0))
 bar <- barplot(as.matrix(otu), col = phylum_color, space = 0.4, width = 0.7, cex.axis = 1, horiz = T, cex.lab = 1.2,
                xlab = 'Relative Abundance', yaxt = 'n', las = 1, ylim = c(0, ncol(otu)), family = 'mono', )
 mtext('Top 10 classes', side = 3, line = 1, cex = 1,font = 7)

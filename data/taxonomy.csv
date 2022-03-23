@@ -222,4 +222,6 @@
 "Otu97","Bacteria","Bacteroidetes","Bacteroidia","Bacteroidales","Porphyromonadaceae","Porphyromonas"
 "Otu98","Bacteria","Firmicutes","Clostridia","Clostridiales","Lachnospiraceae","other"
 "Otu99","Bacteria","Firmicutes","Clostridia","Clostridiales","other","other"
+"X.OTU.ID","Kingdom","phylum","class","order","family","genus"
+"X.OTU.ID","Kingdom","phylum","class","order","family","genus"
 "X.OTU.ID","phylum","class","order","family","genus","species"
